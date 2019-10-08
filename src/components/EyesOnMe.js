@@ -1,17 +1,17 @@
 import React, { Component } from "react";
 
 export default class EyesOnMe extends Component {
-  handleFocus = () => {
+  onFocus = () => {
     console.log("Good!");
   };
 
-  handleBlur = () => {
+  onBlur = () => {
     console.log("Hey! Eyes on me!");
   };
 
   render() {
     return (
-      <button onFocus={this.handleFocus} onBlur={this.handleBlur}></button>
+      <button onFocus={this.onFocus} onBlur={this.onBlur}></button>
     );
   }
 }
